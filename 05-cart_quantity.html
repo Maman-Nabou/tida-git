@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quantite Panier</title>
+</head>
+<body>
+    <button onclick="console.log(`Quantite Panier:${quantitePanier}`);">Show Quantity</button>
+
+    <button onclick="
+    //quantitePanier = quantitePanier + 1;
+    //quantitePanier += 1;
+    quantitePanier ++;
+    console.log (`Quantite Panier:${quantitePanier}`);
+     ">Add to cart</button>
+
+    <button onclick="
+    //quantitePanier=quantitePanier + 2;
+    quantitePanier +=2
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">+2</button>
+
+    <button onclick="
+    quantitePanier = quantitePanier + 3;
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">+3</button>
+
+    <button onclick="
+    quantitePanier = quantitePanier + 4;
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">+4</button>
+
+<button onclick="
+quantitePanier = quantitePanier + 5;
+console.log (`Quantite Panier:${quantitePanier}`);
+">+5</button>
+
+<br>
+<button onclick="
+    //quantitePanier = quantitePanier - 1;
+    //quantitePanier -= 1;
+    quantitePanier --;
+    console.log (`Quantite Panier:${quantitePanier}`);
+     ">Remove from Cart</button>
+
+<button onclick="
+    //quantitePanier=quantitePanier - 2;
+    //quantitePanier -= 2;
+    quantitePanier -=2;
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">-2</button>
+
+<button onclick="
+    //quantitePanier=quantitePanier - 3;
+    quantitePanier -=3;
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">-3</button>
+
+    <button onclick="
+    quantitePanier = 0;
+    console.log (`Quantite Panier:${quantitePanier}`);
+    ">Reset Cart</button>
+     
+    <script>
+      let quantitePanier = 0;
+    
+
+if (quantitePanier  > 10) {
+    alert("Le panier est plein");
+} else {
+    quantitePanier += quantitePanier;
+    console.log("Quantité mise à jour :", quantitePanier);
+}
+     
+    </script>
+</body>
+</html>

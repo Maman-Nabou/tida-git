@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 6f
+const randomNumber = Math.round(Math.random());
+
+// 6g
+if (randomNumber < 0.5) {
+    console.log("pile");
+} else {
+    console.log("face");
+}
+
+// 6h
+let resultat;
+if (randomNumber < 0.5) {
+    resultat = "pile";
+} else {
+    resultat = "face";
+}
+
+// 6i
+const deviner = "pile"; // Changer la valeur pour tester différents résultats
+const message = deviner === resultat ? "Vous gagnez" : "Vous perdez !";
+console.log(message);
+
+
+
+
+    </script>
+</body>
+</html>
